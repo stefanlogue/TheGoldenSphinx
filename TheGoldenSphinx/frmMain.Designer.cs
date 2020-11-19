@@ -104,8 +104,8 @@
             this.btnViewSuppliersForm.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnViewSuppliersForm.FlatAppearance.BorderSize = 0;
             this.btnViewSuppliersForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnViewSuppliersForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnViewSuppliersForm.ForeColor = System.Drawing.Color.Goldenrod;
+            this.btnViewSuppliersForm.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnViewSuppliersForm.ForeColor = System.Drawing.Color.LightGray;
             this.btnViewSuppliersForm.Location = new System.Drawing.Point(0, 120);
             this.btnViewSuppliersForm.Name = "btnViewSuppliersForm";
             this.btnViewSuppliersForm.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
@@ -120,8 +120,8 @@
             this.btnNewSupplierForm.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnNewSupplierForm.FlatAppearance.BorderSize = 0;
             this.btnNewSupplierForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNewSupplierForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNewSupplierForm.ForeColor = System.Drawing.Color.Goldenrod;
+            this.btnNewSupplierForm.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNewSupplierForm.ForeColor = System.Drawing.Color.LightGray;
             this.btnNewSupplierForm.Location = new System.Drawing.Point(0, 80);
             this.btnNewSupplierForm.Name = "btnNewSupplierForm";
             this.btnNewSupplierForm.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
@@ -136,8 +136,8 @@
             this.btnViewProductsForm.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnViewProductsForm.FlatAppearance.BorderSize = 0;
             this.btnViewProductsForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnViewProductsForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnViewProductsForm.ForeColor = System.Drawing.Color.Goldenrod;
+            this.btnViewProductsForm.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnViewProductsForm.ForeColor = System.Drawing.Color.LightGray;
             this.btnViewProductsForm.Location = new System.Drawing.Point(0, 40);
             this.btnViewProductsForm.Name = "btnViewProductsForm";
             this.btnViewProductsForm.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
@@ -152,8 +152,8 @@
             this.btnNewProductForm.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnNewProductForm.FlatAppearance.BorderSize = 0;
             this.btnNewProductForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNewProductForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNewProductForm.ForeColor = System.Drawing.Color.Goldenrod;
+            this.btnNewProductForm.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNewProductForm.ForeColor = System.Drawing.Color.LightGray;
             this.btnNewProductForm.Location = new System.Drawing.Point(0, 0);
             this.btnNewProductForm.Name = "btnNewProductForm";
             this.btnNewProductForm.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
@@ -168,7 +168,7 @@
             this.btnStockMenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnStockMenu.FlatAppearance.BorderSize = 0;
             this.btnStockMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnStockMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStockMenu.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnStockMenu.ForeColor = System.Drawing.Color.Gold;
             this.btnStockMenu.Location = new System.Drawing.Point(0, 566);
             this.btnStockMenu.Name = "btnStockMenu";
@@ -196,8 +196,8 @@
             this.btnViewGuestsForm.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnViewGuestsForm.FlatAppearance.BorderSize = 0;
             this.btnViewGuestsForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnViewGuestsForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnViewGuestsForm.ForeColor = System.Drawing.Color.Goldenrod;
+            this.btnViewGuestsForm.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnViewGuestsForm.ForeColor = System.Drawing.Color.LightGray;
             this.btnViewGuestsForm.Location = new System.Drawing.Point(0, 40);
             this.btnViewGuestsForm.Name = "btnViewGuestsForm";
             this.btnViewGuestsForm.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
@@ -212,8 +212,8 @@
             this.btnNewGuestForm.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnNewGuestForm.FlatAppearance.BorderSize = 0;
             this.btnNewGuestForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNewGuestForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNewGuestForm.ForeColor = System.Drawing.Color.Goldenrod;
+            this.btnNewGuestForm.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNewGuestForm.ForeColor = System.Drawing.Color.LightGray;
             this.btnNewGuestForm.Location = new System.Drawing.Point(0, 0);
             this.btnNewGuestForm.Name = "btnNewGuestForm";
             this.btnNewGuestForm.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
@@ -228,7 +228,7 @@
             this.btnGuestMenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnGuestMenu.FlatAppearance.BorderSize = 0;
             this.btnGuestMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGuestMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuestMenu.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuestMenu.ForeColor = System.Drawing.Color.Gold;
             this.btnGuestMenu.Location = new System.Drawing.Point(0, 438);
             this.btnGuestMenu.Name = "btnGuestMenu";
@@ -257,8 +257,8 @@
             this.btnViewRoomsForm.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnViewRoomsForm.FlatAppearance.BorderSize = 0;
             this.btnViewRoomsForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnViewRoomsForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnViewRoomsForm.ForeColor = System.Drawing.Color.Goldenrod;
+            this.btnViewRoomsForm.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnViewRoomsForm.ForeColor = System.Drawing.Color.LightGray;
             this.btnViewRoomsForm.Location = new System.Drawing.Point(0, 80);
             this.btnViewRoomsForm.Name = "btnViewRoomsForm";
             this.btnViewRoomsForm.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
@@ -273,8 +273,8 @@
             this.btnViewBookingsForm.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnViewBookingsForm.FlatAppearance.BorderSize = 0;
             this.btnViewBookingsForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnViewBookingsForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnViewBookingsForm.ForeColor = System.Drawing.Color.Goldenrod;
+            this.btnViewBookingsForm.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnViewBookingsForm.ForeColor = System.Drawing.Color.LightGray;
             this.btnViewBookingsForm.Location = new System.Drawing.Point(0, 40);
             this.btnViewBookingsForm.Name = "btnViewBookingsForm";
             this.btnViewBookingsForm.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
@@ -289,8 +289,8 @@
             this.btnNewBookingForm.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnNewBookingForm.FlatAppearance.BorderSize = 0;
             this.btnNewBookingForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNewBookingForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNewBookingForm.ForeColor = System.Drawing.Color.Goldenrod;
+            this.btnNewBookingForm.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNewBookingForm.ForeColor = System.Drawing.Color.LightGray;
             this.btnNewBookingForm.Location = new System.Drawing.Point(0, 0);
             this.btnNewBookingForm.Name = "btnNewBookingForm";
             this.btnNewBookingForm.Padding = new System.Windows.Forms.Padding(35, 0, 0, 0);
@@ -305,7 +305,7 @@
             this.btnHotelMenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnHotelMenu.FlatAppearance.BorderSize = 0;
             this.btnHotelMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHotelMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHotelMenu.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHotelMenu.ForeColor = System.Drawing.Color.Gold;
             this.btnHotelMenu.Location = new System.Drawing.Point(0, 269);
             this.btnHotelMenu.Name = "btnHotelMenu";
@@ -335,7 +335,7 @@
             this.btnViewTableForm.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnViewTableForm.FlatAppearance.BorderSize = 0;
             this.btnViewTableForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnViewTableForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnViewTableForm.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnViewTableForm.ForeColor = System.Drawing.Color.LightGray;
             this.btnViewTableForm.Location = new System.Drawing.Point(0, 80);
             this.btnViewTableForm.Name = "btnViewTableForm";
@@ -352,7 +352,7 @@
             this.btnViewReservationsForm.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnViewReservationsForm.FlatAppearance.BorderSize = 0;
             this.btnViewReservationsForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnViewReservationsForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnViewReservationsForm.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnViewReservationsForm.ForeColor = System.Drawing.Color.LightGray;
             this.btnViewReservationsForm.Location = new System.Drawing.Point(0, 40);
             this.btnViewReservationsForm.Name = "btnViewReservationsForm";
@@ -370,7 +370,7 @@
             this.btnNewReservationForm.Dock = System.Windows.Forms.DockStyle.Top;
             this.btnNewReservationForm.FlatAppearance.BorderSize = 0;
             this.btnNewReservationForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNewReservationForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNewReservationForm.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNewReservationForm.ForeColor = System.Drawing.Color.LightGray;
             this.btnNewReservationForm.Location = new System.Drawing.Point(0, 0);
             this.btnNewReservationForm.Name = "btnNewReservationForm";
