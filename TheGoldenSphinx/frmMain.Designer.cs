@@ -51,7 +51,7 @@
             this.btnViewReservationsForm = new System.Windows.Forms.Button();
             this.btnNewReservationForm = new System.Windows.Forms.Button();
             this.btnRestaurantMenu = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panelLogo = new System.Windows.Forms.Panel();
             this.panelTitleBar = new System.Windows.Forms.Panel();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.panelChildForm = new System.Windows.Forms.Panel();
@@ -79,7 +79,7 @@
             this.panelSideMenu.Controls.Add(this.btnHotelMenu);
             this.panelSideMenu.Controls.Add(this.panelRestaurantSubMenu);
             this.panelSideMenu.Controls.Add(this.btnRestaurantMenu);
-            this.panelSideMenu.Controls.Add(this.panel1);
+            this.panelSideMenu.Controls.Add(this.panelLogo);
             this.panelSideMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelSideMenu.Location = new System.Drawing.Point(0, 0);
             this.panelSideMenu.Name = "panelSideMenu";
@@ -114,6 +114,7 @@
             this.btnViewSuppliersForm.Text = "View Suppliers";
             this.btnViewSuppliersForm.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnViewSuppliersForm.UseVisualStyleBackColor = true;
+            this.btnViewSuppliersForm.Click += new System.EventHandler(this.btnViewSuppliersForm_Click);
             // 
             // btnNewSupplierForm
             // 
@@ -146,6 +147,7 @@
             this.btnViewProductsForm.Text = "View Products";
             this.btnViewProductsForm.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnViewProductsForm.UseVisualStyleBackColor = true;
+            this.btnViewProductsForm.Click += new System.EventHandler(this.btnViewProductsForm_Click);
             // 
             // btnNewProductForm
             // 
@@ -399,13 +401,13 @@
             this.btnRestaurantMenu.UseVisualStyleBackColor = true;
             this.btnRestaurantMenu.Click += new System.EventHandler(this.btnRestaurantMenu_Click);
             // 
-            // panel1
+            // panelLogo
             // 
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(233, 100);
-            this.panel1.TabIndex = 0;
+            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelLogo.Location = new System.Drawing.Point(0, 0);
+            this.panelLogo.Name = "panelLogo";
+            this.panelLogo.Size = new System.Drawing.Size(233, 100);
+            this.panelLogo.TabIndex = 0;
             // 
             // panelTitleBar
             // 
@@ -463,7 +465,7 @@
         private System.Windows.Forms.Button btnViewReservationsForm;
         private System.Windows.Forms.Button btnNewReservationForm;
         private System.Windows.Forms.Button btnRestaurantMenu;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panelLogo;
         private System.Windows.Forms.Panel panelStockSubMenu;
         private System.Windows.Forms.Button btnNewSupplierForm;
         private System.Windows.Forms.Button btnViewProductsForm;

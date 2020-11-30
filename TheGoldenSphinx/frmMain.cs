@@ -74,16 +74,31 @@ namespace TheGoldenSphinx
         private void OpenChildForm(Form childForm)
         {
             if (activeForm != null)
-                activeForm.Close();
-
-            activeForm = childForm;
-            childForm.TopLevel = false;
-            childForm.FormBorderStyle = FormBorderStyle.None;
-            childForm.Dock = DockStyle.Fill;
-            panelChildForm.Controls.Add(childForm);
-            panelChildForm.Tag = childForm;
-            childForm.BringToFront();
-            childForm.Show();
+            {
+                if (activeForm.GetType() != childForm.GetType())
+                {
+                    activeForm.Close();
+                    activeForm = childForm;
+                    childForm.TopLevel = false;
+                    childForm.FormBorderStyle = FormBorderStyle.None;
+                    childForm.Dock = DockStyle.Fill;
+                    panelChildForm.Controls.Add(childForm);
+                    panelChildForm.Tag = childForm;
+                    childForm.BringToFront();
+                    childForm.Show();
+                }
+            }
+            else
+            {
+                activeForm = childForm;
+                childForm.TopLevel = false;
+                childForm.FormBorderStyle = FormBorderStyle.None;
+                childForm.Dock = DockStyle.Fill;
+                panelChildForm.Controls.Add(childForm);
+                panelChildForm.Tag = childForm;
+                childForm.BringToFront();
+                childForm.Show();
+            }
         }
 
         private void btnNewReservationForm_Click(object sender, EventArgs e)
@@ -94,6 +109,16 @@ namespace TheGoldenSphinx
         private void btnViewReservationsForm_Click(object sender, EventArgs e)
         {
             OpenChildForm(new frmViewReservations());
+        }
+
+        private void btnViewProductsForm_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new frmViewProducts());
+        }
+
+        private void btnViewSuppliersForm_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new frmViewSuppliers());
         }
     }
 }

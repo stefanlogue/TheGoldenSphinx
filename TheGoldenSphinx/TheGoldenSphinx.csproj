@@ -63,11 +63,23 @@
     <Compile Include="frmNewReservation.Designer.cs">
       <DependentUpon>frmNewReservation.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmViewProducts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmViewProducts.Designer.cs">
+      <DependentUpon>frmViewProducts.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmViewReservations.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmViewReservations.Designer.cs">
       <DependentUpon>frmViewReservations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmViewSuppliers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmViewSuppliers.Designer.cs">
+      <DependentUpon>frmViewSuppliers.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -77,8 +89,14 @@
     <EmbeddedResource Include="frmNewReservation.resx">
       <DependentUpon>frmNewReservation.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmViewProducts.resx">
+      <DependentUpon>frmViewProducts.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmViewReservations.resx">
       <DependentUpon>frmViewReservations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmViewSuppliers.resx">
+      <DependentUpon>frmViewSuppliers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

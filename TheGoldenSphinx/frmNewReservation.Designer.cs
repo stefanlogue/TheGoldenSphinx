@@ -36,7 +36,7 @@
             // 
             this.lblReservationNoLabel.AutoSize = true;
             this.lblReservationNoLabel.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblReservationNoLabel.ForeColor = System.Drawing.Color.LightGray;
+            this.lblReservationNoLabel.ForeColor = System.Drawing.Color.Gainsboro;
             this.lblReservationNoLabel.Location = new System.Drawing.Point(36, 32);
             this.lblReservationNoLabel.Name = "lblReservationNoLabel";
             this.lblReservationNoLabel.Size = new System.Drawing.Size(165, 24);
@@ -47,7 +47,7 @@
             // 
             this.lblCustomerNoLabel.AutoSize = true;
             this.lblCustomerNoLabel.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCustomerNoLabel.ForeColor = System.Drawing.Color.LightGray;
+            this.lblCustomerNoLabel.ForeColor = System.Drawing.Color.Gainsboro;
             this.lblCustomerNoLabel.Location = new System.Drawing.Point(36, 89);
             this.lblCustomerNoLabel.Name = "lblCustomerNoLabel";
             this.lblCustomerNoLabel.Size = new System.Drawing.Size(146, 24);
