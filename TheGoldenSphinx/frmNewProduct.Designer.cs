@@ -97,9 +97,9 @@
             this.lblSupplierNo.ForeColor = System.Drawing.Color.Gainsboro;
             this.lblSupplierNo.Location = new System.Drawing.Point(12, 325);
             this.lblSupplierNo.Name = "lblSupplierNo";
-            this.lblSupplierNo.Size = new System.Drawing.Size(179, 24);
+            this.lblSupplierNo.Size = new System.Drawing.Size(89, 24);
             this.lblSupplierNo.TabIndex = 5;
-            this.lblSupplierNo.Text = "Supplier Number";
+            this.lblSupplierNo.Text = "Supplier";
             // 
             // lblProductNoGen
             // 
@@ -153,7 +153,7 @@
             this.cmboSupplierNo.FormattingEnabled = true;
             this.cmboSupplierNo.Location = new System.Drawing.Point(358, 327);
             this.cmboSupplierNo.Name = "cmboSupplierNo";
-            this.cmboSupplierNo.Size = new System.Drawing.Size(121, 25);
+            this.cmboSupplierNo.Size = new System.Drawing.Size(176, 25);
             this.cmboSupplierNo.TabIndex = 11;
             // 
             // btnAdd

@@ -13,11 +13,11 @@ namespace TheGoldenSphinx
 {
     public partial class frmNewProduct : Form
     {
-        SqlDataAdapter daProduct;
+        SqlDataAdapter daProduct, daSupplier;
         DataSet dsTheGoldenSphinx = new DataSet();
-        SqlCommandBuilder cmdBProduct;
+        SqlCommandBuilder cmdBProduct, cmdBSupplier;
         DataRow drProduct;
-        string connStr, sqlProduct;
+        string connStr, sqlProduct, sqlSupplier;
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
@@ -33,6 +33,46 @@ namespace TheGoldenSphinx
             {
                 ok = false;
                 errP.SetError(lblProductNoGen, E.ToString());
+            }
+
+            try
+            {
+                p.ProductDesc = txtProductDesc.Text.Trim();
+            }
+            catch (MyException E)
+            {
+                ok = false;
+                errP.SetError(txtProductDesc, E.ToString());
+            }
+
+            try
+            {
+                p.Price = Convert.ToDouble(txtPrice.Text.Trim());
+            }
+            catch (MyException E)
+            {
+                ok = false;
+                errP.SetError(txtPrice, E.ToString());
+            }
+
+            try
+            {
+                p.QtyInStock = Convert.ToInt32(txtQtyInStock.Text.Trim());
+            }
+            catch (MyException E)
+            {
+                ok = false;
+                errP.SetError(txtQtyInStock, E.ToString());
+            }
+
+            try
+            {
+                p.SupplierNo = Convert.ToInt32(cmboSupplierNo.SelectedValue);
+            }
+            catch (MyException E)
+            {
+                ok = false;
+                errP.SetError(cmboSupplierNo, E.ToString());
             }
 
             try
@@ -86,6 +126,16 @@ namespace TheGoldenSphinx
             daProduct.FillSchema(dsTheGoldenSphinx, SchemaType.Source, "Product");
             daProduct.Fill(dsTheGoldenSphinx, "Product");
 
+            sqlSupplier = @"select * from Supplier";
+            daSupplier = new SqlDataAdapter(sqlSupplier, connStr);
+            cmdBSupplier = new SqlCommandBuilder(daSupplier);
+            daSupplier.FillSchema(dsTheGoldenSphinx, SchemaType.Source, "Supplier");
+            daSupplier.Fill(dsTheGoldenSphinx, "Supplier");
+
+            cmboSupplierNo.DataSource = dsTheGoldenSphinx.Tables["Supplier"];
+            cmboSupplierNo.ValueMember = "SupplierNo";
+            cmboSupplierNo.DisplayMember = "SupplierName";
+
             int noRows = dsTheGoldenSphinx.Tables["Product"].Rows.Count;
 
             if (noRows == 0)
@@ -96,6 +146,8 @@ namespace TheGoldenSphinx
             {
                 GetNumber(noRows);
             }
+
+            //cmboSupplierNo.DataSource =
 
             errP.Clear();
             ClearForm();

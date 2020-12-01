@@ -97,8 +97,8 @@
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(94)))), ((int)(((byte)(94)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 12.25F, System.Drawing.FontStyle.Bold);
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Gainsboro;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(94)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvViewProductsGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvViewProductsGridView.ColumnHeadersHeight = 50;
@@ -116,6 +116,7 @@
             this.dgvViewProductsGridView.HeaderForeColor = System.Drawing.Color.Gainsboro;
             this.dgvViewProductsGridView.Location = new System.Drawing.Point(13, 13);
             this.dgvViewProductsGridView.Name = "dgvViewProductsGridView";
+            this.dgvViewProductsGridView.ReadOnly = true;
             this.dgvViewProductsGridView.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
@@ -128,6 +129,7 @@
             this.dgvViewProductsGridView.RowHeadersVisible = false;
             this.dgvViewProductsGridView.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.DarkGoldenrod;
             this.dgvViewProductsGridView.RowTemplate.DefaultCellStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.dgvViewProductsGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvViewProductsGridView.Size = new System.Drawing.Size(765, 625);
             this.dgvViewProductsGridView.TabIndex = 4;
             this.dgvViewProductsGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvViewProductsGridView_CellContentClick);
