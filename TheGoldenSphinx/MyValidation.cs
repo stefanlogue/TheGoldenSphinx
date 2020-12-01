@@ -76,5 +76,17 @@ namespace TheGoldenSphinx
 
             return isValid;
         }
+
+        public static bool IsValidPrice(double price)
+        {
+            bool isValid = true;
+
+            if (price >= 0.00)
+            {
+
+            }
+
+            return isValid;
+        }
     }
 }
