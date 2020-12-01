@@ -57,6 +57,12 @@
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmNewProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNewProduct.Designer.cs">
+      <DependentUpon>frmNewProduct.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmNewReservation.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,10 +87,16 @@
     <Compile Include="frmViewSuppliers.Designer.cs">
       <DependentUpon>frmViewSuppliers.cs</DependentUpon>
     </Compile>
+    <Compile Include="MyException.cs" />
+    <Compile Include="MyValidation.cs" />
+    <Compile Include="Product.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNewProduct.resx">
+      <DependentUpon>frmNewProduct.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmNewReservation.resx">
       <DependentUpon>frmNewReservation.cs</DependentUpon>
