@@ -16,7 +16,6 @@ namespace TheGoldenSphinx
         SqlDataAdapter daProduct;
         DataSet dsTheGoldenSphinx = new DataSet();
         SqlCommandBuilder cmdBProduct;
-        DataRow drProduct;
         string connStr, sqlProduct;
 
         public frmViewProducts()
