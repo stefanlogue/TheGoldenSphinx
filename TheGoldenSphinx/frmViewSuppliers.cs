@@ -25,16 +25,16 @@ namespace TheGoldenSphinx
 
         private void frmViewSuppliers_Load(object sender, EventArgs e)
         {
-            //connStr = @"Data Source = .\SQLEXPRESS; Initial Catalog = TheGoldenSphinx; Integrated Security = true";
-            connStr = @"Data Source = .; Initial Catalog = TheGoldenSphinx; Integrated Security = true";
+            connStr = @"Data Source = .\SQLEXPRESS; Initial Catalog = TheGoldenSphinx; Integrated Security = true";
+            //connStr = @"Data Source = .; Initial Catalog = TheGoldenSphinx; Integrated Security = true";
 
-            sqlSupplier = @"select * from Product";
+            sqlSupplier = @"select * from Supplier";
             daSupplier = new SqlDataAdapter(sqlSupplier, connStr);
             cmdBSupplier = new SqlCommandBuilder(daSupplier);
-            daSupplier.FillSchema(dsTheGoldenSphinx, SchemaType.Source, "Product");
-            daSupplier.Fill(dsTheGoldenSphinx, "Product");
+            daSupplier.FillSchema(dsTheGoldenSphinx, SchemaType.Source, "Supplier");
+            daSupplier.Fill(dsTheGoldenSphinx, "Supplier");
 
-            dgvViewSuppliersGridView.DataSource = dsTheGoldenSphinx.Tables["Product"];
+            dgvViewSuppliersGridView.DataSource = dsTheGoldenSphinx.Tables["Supplier"];
             dgvViewSuppliersGridView.AutoResizeColumns(DataGridViewAutoSizeColumnsMode.AllCells);
         }
 

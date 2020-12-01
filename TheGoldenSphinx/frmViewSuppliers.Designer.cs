@@ -28,40 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.dgvViewSuppliersGridView = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.btnViewSuppliersCancel = new System.Windows.Forms.Button();
             this.btnViewSuppliersDelete = new System.Windows.Forms.Button();
             this.btnViewSuppliersEdit = new System.Windows.Forms.Button();
+            this.dgvViewSuppliersGridView = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dgvViewSuppliersGridView)).BeginInit();
             this.SuspendLayout();
-            // 
-            // dgvViewSuppliersGridView
-            // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dgvViewSuppliersGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvViewSuppliersGridView.BackgroundColor = System.Drawing.Color.Gainsboro;
-            this.dgvViewSuppliersGridView.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgvViewSuppliersGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.SeaGreen;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvViewSuppliersGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvViewSuppliersGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvViewSuppliersGridView.DoubleBuffered = true;
-            this.dgvViewSuppliersGridView.EnableHeadersVisualStyles = false;
-            this.dgvViewSuppliersGridView.HeaderBgColor = System.Drawing.Color.SeaGreen;
-            this.dgvViewSuppliersGridView.HeaderForeColor = System.Drawing.Color.SeaGreen;
-            this.dgvViewSuppliersGridView.Location = new System.Drawing.Point(12, 12);
-            this.dgvViewSuppliersGridView.Name = "dgvViewSuppliersGridView";
-            this.dgvViewSuppliersGridView.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dgvViewSuppliersGridView.Size = new System.Drawing.Size(764, 603);
-            this.dgvViewSuppliersGridView.TabIndex = 1;
             // 
             // btnViewSuppliersCancel
             // 
@@ -106,16 +78,24 @@
             this.btnViewSuppliersEdit.Text = "Edit";
             this.btnViewSuppliersEdit.UseVisualStyleBackColor = false;
             // 
+            // dgvViewSuppliersGridView
+            // 
+            this.dgvViewSuppliersGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvViewSuppliersGridView.Location = new System.Drawing.Point(12, 12);
+            this.dgvViewSuppliersGridView.Name = "dgvViewSuppliersGridView";
+            this.dgvViewSuppliersGridView.Size = new System.Drawing.Size(766, 603);
+            this.dgvViewSuppliersGridView.TabIndex = 7;
+            // 
             // frmViewSuppliers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.ClientSize = new System.Drawing.Size(950, 650);
+            this.Controls.Add(this.dgvViewSuppliersGridView);
             this.Controls.Add(this.btnViewSuppliersCancel);
             this.Controls.Add(this.btnViewSuppliersDelete);
             this.Controls.Add(this.btnViewSuppliersEdit);
-            this.Controls.Add(this.dgvViewSuppliersGridView);
             this.Name = "frmViewSuppliers";
             this.Text = "frmViewSuppliers";
             this.Load += new System.EventHandler(this.frmViewSuppliers_Load);
@@ -125,10 +105,9 @@
         }
 
         #endregion
-
-        private Bunifu.Framework.UI.BunifuCustomDataGrid dgvViewSuppliersGridView;
         private System.Windows.Forms.Button btnViewSuppliersCancel;
         private System.Windows.Forms.Button btnViewSuppliersDelete;
         private System.Windows.Forms.Button btnViewSuppliersEdit;
+        private System.Windows.Forms.DataGridView dgvViewSuppliersGridView;
     }
 }

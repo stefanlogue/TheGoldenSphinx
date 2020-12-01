@@ -94,9 +94,9 @@
             this.panelStockSubMenu.Controls.Add(this.btnViewProductsForm);
             this.panelStockSubMenu.Controls.Add(this.btnNewProductForm);
             this.panelStockSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelStockSubMenu.Location = new System.Drawing.Point(0, 611);
+            this.panelStockSubMenu.Location = new System.Drawing.Point(0, 593);
             this.panelStockSubMenu.Name = "panelStockSubMenu";
-            this.panelStockSubMenu.Size = new System.Drawing.Size(233, 162);
+            this.panelStockSubMenu.Size = new System.Drawing.Size(233, 159);
             this.panelStockSubMenu.TabIndex = 8;
             // 
             // btnViewSuppliersForm
@@ -164,6 +164,7 @@
             this.btnNewProductForm.Text = "New Product";
             this.btnNewProductForm.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnNewProductForm.UseVisualStyleBackColor = true;
+            this.btnNewProductForm.Click += new System.EventHandler(this.btnNewProductForm_Click);
             // 
             // btnStockMenu
             // 
@@ -172,7 +173,7 @@
             this.btnStockMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnStockMenu.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnStockMenu.ForeColor = System.Drawing.Color.Gold;
-            this.btnStockMenu.Location = new System.Drawing.Point(0, 566);
+            this.btnStockMenu.Location = new System.Drawing.Point(0, 548);
             this.btnStockMenu.Name = "btnStockMenu";
             this.btnStockMenu.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnStockMenu.Size = new System.Drawing.Size(233, 45);
@@ -188,9 +189,9 @@
             this.panelCustomerSubMenu.Controls.Add(this.btnViewGuestsForm);
             this.panelCustomerSubMenu.Controls.Add(this.btnNewGuestForm);
             this.panelCustomerSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelCustomerSubMenu.Location = new System.Drawing.Point(0, 483);
+            this.panelCustomerSubMenu.Location = new System.Drawing.Point(0, 471);
             this.panelCustomerSubMenu.Name = "panelCustomerSubMenu";
-            this.panelCustomerSubMenu.Size = new System.Drawing.Size(233, 83);
+            this.panelCustomerSubMenu.Size = new System.Drawing.Size(233, 77);
             this.panelCustomerSubMenu.TabIndex = 6;
             // 
             // btnViewGuestsForm
@@ -232,7 +233,7 @@
             this.btnGuestMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuestMenu.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuestMenu.ForeColor = System.Drawing.Color.Gold;
-            this.btnGuestMenu.Location = new System.Drawing.Point(0, 438);
+            this.btnGuestMenu.Location = new System.Drawing.Point(0, 426);
             this.btnGuestMenu.Name = "btnGuestMenu";
             this.btnGuestMenu.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnGuestMenu.Size = new System.Drawing.Size(233, 45);
@@ -249,9 +250,9 @@
             this.panelHotelSubMenu.Controls.Add(this.btnViewBookingsForm);
             this.panelHotelSubMenu.Controls.Add(this.btnNewBookingForm);
             this.panelHotelSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelHotelSubMenu.Location = new System.Drawing.Point(0, 314);
+            this.panelHotelSubMenu.Location = new System.Drawing.Point(0, 308);
             this.panelHotelSubMenu.Name = "panelHotelSubMenu";
-            this.panelHotelSubMenu.Size = new System.Drawing.Size(233, 124);
+            this.panelHotelSubMenu.Size = new System.Drawing.Size(233, 118);
             this.panelHotelSubMenu.TabIndex = 4;
             // 
             // btnViewRoomsForm
@@ -309,7 +310,7 @@
             this.btnHotelMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHotelMenu.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHotelMenu.ForeColor = System.Drawing.Color.Gold;
-            this.btnHotelMenu.Location = new System.Drawing.Point(0, 269);
+            this.btnHotelMenu.Location = new System.Drawing.Point(0, 263);
             this.btnHotelMenu.Name = "btnHotelMenu";
             this.btnHotelMenu.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnHotelMenu.Size = new System.Drawing.Size(233, 45);
@@ -328,7 +329,7 @@
             this.panelRestaurantSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelRestaurantSubMenu.Location = new System.Drawing.Point(0, 145);
             this.panelRestaurantSubMenu.Name = "panelRestaurantSubMenu";
-            this.panelRestaurantSubMenu.Size = new System.Drawing.Size(233, 124);
+            this.panelRestaurantSubMenu.Size = new System.Drawing.Size(233, 118);
             this.panelRestaurantSubMenu.TabIndex = 2;
             // 
             // btnViewTableForm

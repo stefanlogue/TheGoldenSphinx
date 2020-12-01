@@ -77,6 +77,15 @@ namespace TheGoldenSphinx
 
         private void frmNewProduct_Load(object sender, EventArgs e)
         {
+            connStr = @"Data Source = .\SQLEXPRESS; Initial Catalog = TheGoldenSphinx; Integrated Security = true";
+            //connStr = @"Data Source = .; Initial Catalog = TheGoldenSphinx; Integrated Security = true";
+
+            sqlProduct = @"select * from Product";
+            daProduct = new SqlDataAdapter(sqlProduct, connStr);
+            cmdBProduct = new SqlCommandBuilder(daProduct);
+            daProduct.FillSchema(dsTheGoldenSphinx, SchemaType.Source, "Product");
+            daProduct.Fill(dsTheGoldenSphinx, "Product");
+
             int noRows = dsTheGoldenSphinx.Tables["Product"].Rows.Count;
 
             if (noRows == 0)

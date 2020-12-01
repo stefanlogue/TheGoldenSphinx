@@ -29,10 +29,15 @@ namespace TheGoldenSphinx
             this.Close();
         }
 
+        private void dgvViewProductsGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
         private void frmViewProducts_Load(object sender, EventArgs e)
         {
-            //connStr = @"Data Source = .\SQLEXPRESS; Initial Catalog = TheGoldenSphinx; Integrated Security = true";
-            connStr = @"Data Source = .; Initial Catalog = TheGoldenSphinx; Integrated Security = true";
+            connStr = @"Data Source = .\SQLEXPRESS; Initial Catalog = TheGoldenSphinx; Integrated Security = true";
+            //connStr = @"Data Source = .; Initial Catalog = TheGoldenSphinx; Integrated Security = true";
 
             sqlProduct = @"select * from Product";
             daProduct = new SqlDataAdapter(sqlProduct, connStr);
@@ -42,6 +47,8 @@ namespace TheGoldenSphinx
 
             dgvViewProductsGridView.DataSource = dsTheGoldenSphinx.Tables["Product"];
             dgvViewProductsGridView.AutoResizeColumns(DataGridViewAutoSizeColumnsMode.AllCells);
+
+            dgvViewProductsGridView.Columns["Price"].DefaultCellStyle.Format = "c";
         }
     }
 }
