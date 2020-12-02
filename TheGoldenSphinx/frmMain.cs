@@ -125,5 +125,10 @@ namespace TheGoldenSphinx
         {
             OpenChildForm(new frmNewProduct());
         }
+
+        private void btnNewSupplierForm_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new frmNewSupplier());
+        }
     }
 }

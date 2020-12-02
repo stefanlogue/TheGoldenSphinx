@@ -69,6 +69,12 @@
     <Compile Include="frmNewReservation.Designer.cs">
       <DependentUpon>frmNewReservation.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmNewSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNewSupplier.Designer.cs">
+      <DependentUpon>frmNewSupplier.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmViewProducts.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,6 +106,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmNewReservation.resx">
       <DependentUpon>frmNewReservation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNewSupplier.resx">
+      <DependentUpon>frmNewSupplier.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmViewProducts.resx">
       <DependentUpon>frmViewProducts.cs</DependentUpon>

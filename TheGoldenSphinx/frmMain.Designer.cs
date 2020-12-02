@@ -131,6 +131,7 @@
             this.btnNewSupplierForm.Text = "New Supplier";
             this.btnNewSupplierForm.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnNewSupplierForm.UseVisualStyleBackColor = true;
+            this.btnNewSupplierForm.Click += new System.EventHandler(this.btnNewSupplierForm_Click);
             // 
             // btnViewProductsForm
             // 
