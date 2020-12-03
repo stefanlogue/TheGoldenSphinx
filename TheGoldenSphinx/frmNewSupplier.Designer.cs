@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lblSupplierNoLabel = new System.Windows.Forms.Label();
             this.lblSupplierName = new System.Windows.Forms.Label();
             this.lblContactNo = new System.Windows.Forms.Label();
@@ -42,6 +43,8 @@
             this.txtPostcode = new System.Windows.Forms.TextBox();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
+            this.errP = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.errP)).BeginInit();
             this.SuspendLayout();
             // 
             // lblSupplierNoLabel
@@ -189,6 +192,10 @@
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = false;
             // 
+            // errP
+            // 
+            this.errP.ContainerControl = this;
+            // 
             // frmNewSupplier
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -211,6 +218,8 @@
             this.Controls.Add(this.lblSupplierNoLabel);
             this.Name = "frmNewSupplier";
             this.Text = "frmNewSupplier";
+            this.Load += new System.EventHandler(this.frmNewSupplier_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.errP)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -232,5 +241,6 @@
         private System.Windows.Forms.TextBox txtPostcode;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.ErrorProvider errP;
     }
 }
