@@ -75,6 +75,12 @@
     <Compile Include="frmNewSupplier.Designer.cs">
       <DependentUpon>frmNewSupplier.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTable.Designer.cs">
+      <DependentUpon>frmTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmViewProducts.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,7 +104,10 @@
     <Compile Include="Product.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reservation.cs" />
+    <Compile Include="ReservationDetails.cs" />
     <Compile Include="Supplier.cs" />
+    <Compile Include="Table.cs" />
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
@@ -110,6 +119,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmNewSupplier.resx">
       <DependentUpon>frmNewSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTable.resx">
+      <DependentUpon>frmTable.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmViewProducts.resx">
       <DependentUpon>frmViewProducts.cs</DependentUpon>

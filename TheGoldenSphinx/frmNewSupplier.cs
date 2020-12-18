@@ -45,6 +45,119 @@ namespace TheGoldenSphinx
             ClearForm();
         }
 
+        private void GetNumber(int n)
+        {
+            drSupplier = dsTheGoldenSphinx.Tables["Supplier"].Rows[n - 1];
+            lblSupplierNoGen.Text = (int.Parse(drSupplier["SupplierNo"].ToString()) + 1).ToString();
+        }
+
+        private void ClearForm()
+        {
+            txtContactNo.Clear();
+            txtSupplierName.Clear();
+            txtPostcode.Clear();
+            txtStreet.Clear();
+            txtTown.Clear();
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            Supplier s = new Supplier();
+            bool ok = true;
+            errP.Clear();
+
+            try
+            {
+                s.SupplierNo = Convert.ToInt32(lblSupplierNoGen.Text.Trim());
+            }
+            catch (MyException E)
+            {
+                ok = false;
+                errP.SetError(lblSupplierNoGen, E.ToString());
+            }
+
+            try
+            {
+                s.SupplierName = txtSupplierName.Text.Trim();
+            }
+            catch (MyException E)
+            {
+                ok = false;
+                errP.SetError(txtSupplierName, E.ToString());
+            }
+
+            try
+            {
+                s.Contact = txtContactNo.Text.Trim();
+            }
+            catch (MyException E)
+            {
+                ok = false;
+                errP.SetError(txtContactNo, E.ToString());
+            }
+
+            try
+            {
+                s.Street = txtStreet.Text.Trim();
+            }
+            catch (MyException E)
+            {
+                ok = false;
+                errP.SetError(txtStreet, E.ToString());
+            }
+
+            try
+            {
+                s.Town = txtTown.Text.Trim();
+            }
+            catch (MyException E)
+            {
+                ok = false;
+                errP.SetError(txtTown, E.ToString());
+            }
+
+            try
+            {
+                s.Postcode = txtPostcode.Text.Trim();
+            }
+            catch (MyException E)
+            {
+                ok = false;
+                errP.SetError(txtPostcode, E.ToString());
+            }
+
+            try
+            {
+                if (ok)
+                {
+                    drSupplier = dsTheGoldenSphinx.Tables["Supplier"].NewRow();
+
+                    drSupplier["SupplierNo"] = s.SupplierNo;
+                    drSupplier["SupplierName"] = s.SupplierName;
+                    drSupplier["SupplierContact"] = s.Contact;
+                    drSupplier["SupplierStreet"] = s.Street;
+                    drSupplier["SupplierTown"] = s.Town;
+                    drSupplier["SupplierPostcode"] = s.Postcode;
+
+                    dsTheGoldenSphinx.Tables["Supplier"].Rows.Add(drSupplier);
+                    daSupplier.Update(dsTheGoldenSphinx, "Supplier");
+
+                    MessageBox.Show("Supplier Added");
+                    ClearForm();
+                    GetNumber(dsTheGoldenSphinx.Tables["Supplier"].Rows.Count);
+                }
+            }
+            catch (Exception E)
+            {
+                MessageBox.Show("" + E.TargetSite + "" + E.Message, "Error!", MessageBoxButtons.AbortRetryIgnore, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btnCancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
         public frmNewSupplier()
         {
             InitializeComponent();

@@ -55,11 +55,14 @@
             this.panelTitleBar = new System.Windows.Forms.Panel();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.panelChildForm = new System.Windows.Forms.Panel();
+            this.btnX = new System.Windows.Forms.Button();
+            this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panelSideMenu.SuspendLayout();
             this.panelStockSubMenu.SuspendLayout();
             this.panelCustomerSubMenu.SuspendLayout();
             this.panelHotelSubMenu.SuspendLayout();
             this.panelRestaurantSubMenu.SuspendLayout();
+            this.panelTitleBar.SuspendLayout();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -349,6 +352,7 @@
             this.btnViewTableForm.Text = "Tables";
             this.btnViewTableForm.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnViewTableForm.UseVisualStyleBackColor = false;
+            this.btnViewTableForm.Click += new System.EventHandler(this.btnViewTableForm_Click);
             // 
             // btnViewReservationsForm
             // 
@@ -414,6 +418,7 @@
             // panelTitleBar
             // 
             this.panelTitleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
+            this.panelTitleBar.Controls.Add(this.btnX);
             this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTitleBar.Location = new System.Drawing.Point(250, 0);
             this.panelTitleBar.Name = "panelTitleBar";
@@ -436,6 +441,26 @@
             this.panelChildForm.Size = new System.Drawing.Size(950, 650);
             this.panelChildForm.TabIndex = 2;
             // 
+            // btnX
+            // 
+            this.btnX.BackColor = System.Drawing.Color.DarkRed;
+            this.btnX.FlatAppearance.BorderSize = 0;
+            this.btnX.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnX.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnX.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnX.Location = new System.Drawing.Point(908, -6);
+            this.btnX.Name = "btnX";
+            this.btnX.Size = new System.Drawing.Size(48, 42);
+            this.btnX.TabIndex = 5;
+            this.btnX.Text = "X";
+            this.btnX.UseVisualStyleBackColor = false;
+            this.btnX.Click += new System.EventHandler(this.btnX_Click);
+            // 
+            // bunifuElipse2
+            // 
+            this.bunifuElipse2.ElipseRadius = 15;
+            this.bunifuElipse2.TargetControl = this.btnX;
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -454,6 +479,7 @@
             this.panelCustomerSubMenu.ResumeLayout(false);
             this.panelHotelSubMenu.ResumeLayout(false);
             this.panelRestaurantSubMenu.ResumeLayout(false);
+            this.panelTitleBar.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -486,6 +512,8 @@
         private System.Windows.Forms.Panel panelTitleBar;
         private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl1;
         private System.Windows.Forms.Panel panelChildForm;
+        private System.Windows.Forms.Button btnX;
+        private Bunifu.Framework.UI.BunifuElipse bunifuElipse2;
     }
 }
 

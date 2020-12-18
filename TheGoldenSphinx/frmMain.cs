@@ -130,5 +130,15 @@ namespace TheGoldenSphinx
         {
             OpenChildForm(new frmNewSupplier());
         }
+
+        private void btnViewTableForm_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new frmTable());
+        }
+
+        private void btnX_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
