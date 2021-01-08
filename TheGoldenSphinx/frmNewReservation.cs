@@ -23,7 +23,9 @@ namespace TheGoldenSphinx
         }
 
         DataRow drReservation, drReservationDetails;
-        string connStr, sqlReservation, sqlReservationDetails, sqlTable, sqlProduct, sqlCustomer;
+        string connStr = Program.connStr;
+        string sqlReservation, sqlReservationDetails, sqlTable, sqlProduct, sqlCustomer;
+
         private void btnAdd_Click(object sender, EventArgs e)
         {
             Reservation r = new Reservation();
@@ -151,7 +153,7 @@ namespace TheGoldenSphinx
         }
         private void frmNewReservation_Load(object sender, EventArgs e)
         {
-            connStr = @"Data Source = .\SQLEXPRESS; Initial Catalog = TheGoldenSphinx; Integrated Security = true";
+            //connStr = @"Data Source = .\SQLEXPRESS; Initial Catalog = TheGoldenSphinx; Integrated Security = true";
             //connStr = @"Data Source = .; Initial Catalog = TheGoldenSphinx; Integrated Security = true";
 
             sqlReservation = @"select * from Reservation";

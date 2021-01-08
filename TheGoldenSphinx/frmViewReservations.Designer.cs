@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -36,6 +37,7 @@
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
+            this.tt = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dgvViewReservationsGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -87,6 +89,7 @@
             this.dgvViewReservationsGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvViewReservationsGridView.Size = new System.Drawing.Size(753, 625);
             this.dgvViewReservationsGridView.TabIndex = 8;
+            this.tt.SetToolTip(this.dgvViewReservationsGridView, "Double click or press F2 to edit once Edit has been clicked");
             // 
             // btnEdit
             // 
@@ -100,11 +103,15 @@
             this.btnEdit.Size = new System.Drawing.Size(154, 59);
             this.btnEdit.TabIndex = 10;
             this.btnEdit.Text = "Edit";
+            this.tt.SetToolTip(this.btnEdit, "Unlocks the Table to be edited. \r\nDouble click to edit a field. \r\nClick Save to s" +
+        "ave changes");
             this.btnEdit.UseVisualStyleBackColor = false;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // btnDelete
             // 
             this.btnDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(90)))), ((int)(((byte)(90)))));
+            this.btnDelete.Enabled = false;
             this.btnDelete.FlatAppearance.BorderSize = 0;
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDelete.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -114,7 +121,9 @@
             this.btnDelete.Size = new System.Drawing.Size(154, 59);
             this.btnDelete.TabIndex = 11;
             this.btnDelete.Text = "Delete";
+            this.tt.SetToolTip(this.btnDelete, "Deleting records cannot be undone!");
             this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnCancel
             // 
@@ -155,5 +164,6 @@
         private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnCancel;
+        private System.Windows.Forms.ToolTip tt;
     }
 }

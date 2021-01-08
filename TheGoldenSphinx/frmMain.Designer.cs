@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panelSideMenu = new System.Windows.Forms.Panel();
             this.panelStockSubMenu = new System.Windows.Forms.Panel();
@@ -52,16 +53,22 @@
             this.btnNewReservationForm = new System.Windows.Forms.Button();
             this.btnRestaurantMenu = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelTitleBar = new System.Windows.Forms.Panel();
+            this.lblTitle = new System.Windows.Forms.Label();
+            this.btnX = new System.Windows.Forms.Button();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.panelChildForm = new System.Windows.Forms.Panel();
-            this.btnX = new System.Windows.Forms.Button();
             this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.bunifuDragControl2 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.bunifuDragControl3 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.panelSideMenu.SuspendLayout();
             this.panelStockSubMenu.SuspendLayout();
             this.panelCustomerSubMenu.SuspendLayout();
             this.panelHotelSubMenu.SuspendLayout();
             this.panelRestaurantSubMenu.SuspendLayout();
+            this.panelLogo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelTitleBar.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -213,6 +220,7 @@
             this.btnViewGuestsForm.Text = "View Guests";
             this.btnViewGuestsForm.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnViewGuestsForm.UseVisualStyleBackColor = true;
+            this.btnViewGuestsForm.Click += new System.EventHandler(this.btnViewGuestsForm_Click);
             // 
             // btnNewGuestForm
             // 
@@ -229,6 +237,7 @@
             this.btnNewGuestForm.Text = "New Guest";
             this.btnNewGuestForm.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnNewGuestForm.UseVisualStyleBackColor = true;
+            this.btnNewGuestForm.Click += new System.EventHandler(this.btnNewGuestForm_Click);
             // 
             // btnGuestMenu
             // 
@@ -409,21 +418,60 @@
             // 
             // panelLogo
             // 
+            this.panelLogo.Controls.Add(this.pictureBox1);
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
             this.panelLogo.Name = "panelLogo";
             this.panelLogo.Size = new System.Drawing.Size(233, 100);
             this.panelLogo.TabIndex = 0;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(233, 100);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // panelTitleBar
             // 
             this.panelTitleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
+            this.panelTitleBar.Controls.Add(this.lblTitle);
             this.panelTitleBar.Controls.Add(this.btnX);
             this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTitleBar.Location = new System.Drawing.Point(250, 0);
             this.panelTitleBar.Name = "panelTitleBar";
             this.panelTitleBar.Size = new System.Drawing.Size(950, 100);
             this.panelTitleBar.TabIndex = 1;
+            // 
+            // lblTitle
+            // 
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.Font = new System.Drawing.Font("Century Gothic", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.ForeColor = System.Drawing.Color.Gold;
+            this.lblTitle.Location = new System.Drawing.Point(274, 26);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(353, 44);
+            this.lblTitle.TabIndex = 6;
+            this.lblTitle.Text = "The Golden Sphinx";
+            // 
+            // btnX
+            // 
+            this.btnX.BackColor = System.Drawing.Color.DarkRed;
+            this.btnX.FlatAppearance.BorderSize = 0;
+            this.btnX.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnX.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnX.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnX.Location = new System.Drawing.Point(907, -6);
+            this.btnX.Name = "btnX";
+            this.btnX.Size = new System.Drawing.Size(48, 42);
+            this.btnX.TabIndex = 5;
+            this.btnX.Text = "X";
+            this.btnX.UseVisualStyleBackColor = false;
+            this.btnX.Click += new System.EventHandler(this.btnX_Click);
             // 
             // bunifuDragControl1
             // 
@@ -441,25 +489,24 @@
             this.panelChildForm.Size = new System.Drawing.Size(950, 650);
             this.panelChildForm.TabIndex = 2;
             // 
-            // btnX
-            // 
-            this.btnX.BackColor = System.Drawing.Color.DarkRed;
-            this.btnX.FlatAppearance.BorderSize = 0;
-            this.btnX.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnX.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnX.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnX.Location = new System.Drawing.Point(908, -6);
-            this.btnX.Name = "btnX";
-            this.btnX.Size = new System.Drawing.Size(48, 42);
-            this.btnX.TabIndex = 5;
-            this.btnX.Text = "X";
-            this.btnX.UseVisualStyleBackColor = false;
-            this.btnX.Click += new System.EventHandler(this.btnX_Click);
-            // 
             // bunifuElipse2
             // 
             this.bunifuElipse2.ElipseRadius = 15;
             this.bunifuElipse2.TargetControl = this.btnX;
+            // 
+            // bunifuDragControl2
+            // 
+            this.bunifuDragControl2.Fixed = true;
+            this.bunifuDragControl2.Horizontal = true;
+            this.bunifuDragControl2.TargetControl = this.lblTitle;
+            this.bunifuDragControl2.Vertical = true;
+            // 
+            // bunifuDragControl3
+            // 
+            this.bunifuDragControl3.Fixed = true;
+            this.bunifuDragControl3.Horizontal = true;
+            this.bunifuDragControl3.TargetControl = this.pictureBox1;
+            this.bunifuDragControl3.Vertical = true;
             // 
             // frmMain
             // 
@@ -479,7 +526,10 @@
             this.panelCustomerSubMenu.ResumeLayout(false);
             this.panelHotelSubMenu.ResumeLayout(false);
             this.panelRestaurantSubMenu.ResumeLayout(false);
+            this.panelLogo.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panelTitleBar.ResumeLayout(false);
+            this.panelTitleBar.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -514,6 +564,10 @@
         private System.Windows.Forms.Panel panelChildForm;
         private System.Windows.Forms.Button btnX;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse2;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label lblTitle;
+        private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl2;
+        private Bunifu.Framework.UI.BunifuDragControl bunifuDragControl3;
     }
 }
 

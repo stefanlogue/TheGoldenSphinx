@@ -38,6 +38,7 @@
             this.btnViewProductsCancel = new System.Windows.Forms.Button();
             this.dgvViewProductsGridView = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dgvViewProductsGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -53,11 +54,15 @@
             this.btnViewProductsEdit.Size = new System.Drawing.Size(154, 59);
             this.btnViewProductsEdit.TabIndex = 1;
             this.btnViewProductsEdit.Text = "Edit";
+            this.toolTip1.SetToolTip(this.btnViewProductsEdit, "Unlocks the Table to be edited. \r\nDouble click to edit a field. \r\nClick Save to s" +
+        "ave changes");
             this.btnViewProductsEdit.UseVisualStyleBackColor = false;
+            this.btnViewProductsEdit.Click += new System.EventHandler(this.btnViewProductsEdit_Click);
             // 
             // btnViewProductsDelete
             // 
             this.btnViewProductsDelete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(90)))), ((int)(((byte)(90)))));
+            this.btnViewProductsDelete.Enabled = false;
             this.btnViewProductsDelete.FlatAppearance.BorderSize = 0;
             this.btnViewProductsDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnViewProductsDelete.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -67,7 +72,9 @@
             this.btnViewProductsDelete.Size = new System.Drawing.Size(154, 59);
             this.btnViewProductsDelete.TabIndex = 2;
             this.btnViewProductsDelete.Text = "Delete";
+            this.toolTip1.SetToolTip(this.btnViewProductsDelete, "Deleting records cannot be undone!");
             this.btnViewProductsDelete.UseVisualStyleBackColor = false;
+            this.btnViewProductsDelete.Click += new System.EventHandler(this.btnViewProductsDelete_Click);
             // 
             // btnViewProductsCancel
             // 
@@ -164,5 +171,6 @@
         private System.Windows.Forms.Button btnViewProductsCancel;
         private Bunifu.Framework.UI.BunifuCustomDataGrid dgvViewProductsGridView;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }

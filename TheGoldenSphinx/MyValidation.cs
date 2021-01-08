@@ -20,6 +20,26 @@ namespace TheGoldenSphinx
             return isValid;
         }
 
+        public static bool IsValidLetterLength(string txt, int min, int max)
+        {
+            bool isValid = true;
+
+            if (string.IsNullOrEmpty(txt))
+                isValid = false;
+            else if (txt.Length < min || txt.Length > max)
+                isValid = false;
+
+            for (int i = 0; i < txt.Length; i++)
+            {
+                if (!(char.IsLetter(txt[i])))
+                {
+                    isValid = false;
+                }
+            }
+
+            return isValid;
+        }
+
         public static bool IsValidNumber(string txt)
         {
             bool isValid = true;

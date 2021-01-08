@@ -51,11 +51,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmEditSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEditSupplier.Designer.cs">
+      <DependentUpon>frmEditSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLandingScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLandingScreen.Designer.cs">
+      <DependentUpon>frmLandingScreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNewGuest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNewGuest.Designer.cs">
+      <DependentUpon>frmNewGuest.cs</DependentUpon>
     </Compile>
     <Compile Include="frmNewProduct.cs">
       <SubType>Form</SubType>
@@ -81,6 +99,12 @@
     <Compile Include="frmTable.Designer.cs">
       <DependentUpon>frmTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmViewGuests.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmViewGuests.Designer.cs">
+      <DependentUpon>frmViewGuests.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmViewProducts.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +123,7 @@
     <Compile Include="frmViewSuppliers.Designer.cs">
       <DependentUpon>frmViewSuppliers.cs</DependentUpon>
     </Compile>
+    <Compile Include="Guest.cs" />
     <Compile Include="MyException.cs" />
     <Compile Include="MyValidation.cs" />
     <Compile Include="Product.cs" />
@@ -108,8 +133,17 @@
     <Compile Include="ReservationDetails.cs" />
     <Compile Include="Supplier.cs" />
     <Compile Include="Table.cs" />
+    <EmbeddedResource Include="frmEditSupplier.resx">
+      <DependentUpon>frmEditSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLandingScreen.resx">
+      <DependentUpon>frmLandingScreen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNewGuest.resx">
+      <DependentUpon>frmNewGuest.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmNewProduct.resx">
       <DependentUpon>frmNewProduct.cs</DependentUpon>
@@ -122,6 +156,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmTable.resx">
       <DependentUpon>frmTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmViewGuests.resx">
+      <DependentUpon>frmViewGuests.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmViewProducts.resx">
       <DependentUpon>frmViewProducts.cs</DependentUpon>

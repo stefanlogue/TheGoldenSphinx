@@ -140,5 +140,19 @@ namespace TheGoldenSphinx
         {
             Application.Exit();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void btnViewGuestsForm_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new frmViewGuests());
+        }
+
+        private void btnNewGuestForm_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new frmNewGuest());
+        }
     }
 }

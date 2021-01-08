@@ -45,7 +45,6 @@
             this.lblReservationNoGen = new System.Windows.Forms.Label();
             this.btnAdd = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
-            this.btnNewGuest = new System.Windows.Forms.Button();
             this.errP = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.errP)).BeginInit();
             this.SuspendLayout();
@@ -68,9 +67,9 @@
             this.lblCustomerNoLabel.ForeColor = System.Drawing.Color.Gainsboro;
             this.lblCustomerNoLabel.Location = new System.Drawing.Point(12, 64);
             this.lblCustomerNoLabel.Name = "lblCustomerNoLabel";
-            this.lblCustomerNoLabel.Size = new System.Drawing.Size(146, 24);
+            this.lblCustomerNoLabel.Size = new System.Drawing.Size(110, 24);
             this.lblCustomerNoLabel.TabIndex = 1;
-            this.lblCustomerNoLabel.Text = "Customer No";
+            this.lblCustomerNoLabel.Text = "Customer";
             // 
             // label1
             // 
@@ -219,20 +218,6 @@
             this.btnCancel.UseVisualStyleBackColor = false;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
-            // btnNewGuest
-            // 
-            this.btnNewGuest.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(90)))), ((int)(((byte)(90)))));
-            this.btnNewGuest.FlatAppearance.BorderSize = 0;
-            this.btnNewGuest.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNewGuest.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNewGuest.ForeColor = System.Drawing.Color.Gainsboro;
-            this.btnNewGuest.Location = new System.Drawing.Point(372, 62);
-            this.btnNewGuest.Name = "btnNewGuest";
-            this.btnNewGuest.Size = new System.Drawing.Size(128, 29);
-            this.btnNewGuest.TabIndex = 20;
-            this.btnNewGuest.Text = "New Guest";
-            this.btnNewGuest.UseVisualStyleBackColor = false;
-            // 
             // errP
             // 
             this.errP.ContainerControl = this;
@@ -243,7 +228,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.ClientSize = new System.Drawing.Size(950, 650);
-            this.Controls.Add(this.btnNewGuest);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.lblReservationNoGen);
@@ -287,7 +271,6 @@
         private System.Windows.Forms.Label lblReservationNoGen;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnCancel;
-        private System.Windows.Forms.Button btnNewGuest;
         private System.Windows.Forms.ErrorProvider errP;
     }
 }

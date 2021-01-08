@@ -17,11 +17,12 @@ namespace TheGoldenSphinx
         DataSet dsTheGoldenSphinx = new DataSet();
         SqlCommandBuilder cmdBSupplier;
         DataRow drSupplier;
-        string connStr, sqlSupplier;
+        string connStr = Program.connStr;
+        string sqlSupplier;
 
         private void frmNewSupplier_Load(object sender, EventArgs e)
         {
-            connStr = @"Data Source = .\SQLEXPRESS; Initial Catalog = TheGoldenSphinx; Integrated Security = true";
+            //connStr = @"Data Source = .\SQLEXPRESS; Initial Catalog = TheGoldenSphinx; Integrated Security = true";
             //connStr = @"Data Source = .; Initial Catalog = TheGoldenSphinx; Integrated Security = true";
 
             sqlSupplier = @"select * from Supplier";

@@ -17,7 +17,8 @@ namespace TheGoldenSphinx
         DataSet dsTheGoldenSphinx = new DataSet();
         SqlCommandBuilder cmdBProduct, cmdBSupplier;
         DataRow drProduct;
-        string connStr, sqlProduct, sqlSupplier;
+        string connStr = Program.connStr; 
+        string sqlProduct, sqlSupplier;
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
@@ -117,7 +118,7 @@ namespace TheGoldenSphinx
 
         private void frmNewProduct_Load(object sender, EventArgs e)
         {
-            connStr = @"Data Source = .\SQLEXPRESS; Initial Catalog = TheGoldenSphinx; Integrated Security = true";
+            //connStr = @"Data Source = .\SQLEXPRESS; Initial Catalog = TheGoldenSphinx; Integrated Security = true";
             //connStr = @"Data Source = .; Initial Catalog = TheGoldenSphinx; Integrated Security = true";
 
             sqlProduct = @"select * from Product";

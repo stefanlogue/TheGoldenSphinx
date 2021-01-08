@@ -16,11 +16,12 @@ namespace TheGoldenSphinx
         SqlDataAdapter daReservationDetails;
         DataSet dsTheGoldenSphinx = new DataSet();
         SqlCommandBuilder cmdBReservationDetails;
-        string connStr, sqlReservationDetails;
+        string connStr = Program.connStr;
+        string sqlReservationDetails;
 
         private void frmViewReservations_Load(object sender, EventArgs e)
         {
-            connStr = @"Data Source = .\SQLEXPRESS; Initial Catalog = TheGoldenSphinx; Integrated Security = true";
+            //connStr = @"Data Source = .\SQLEXPRESS; Initial Catalog = TheGoldenSphinx; Integrated Security = true";
             //connStr = @"Data Source = .; Initial Catalog = TheGoldenSphinx; Integrated Security = true";
 
             sqlReservationDetails = @"select * from ReservationDetails";
@@ -36,6 +37,30 @@ namespace TheGoldenSphinx
         private void btnCancel_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            if (btnEdit.Text == "Edit")
+            {
+                dgvViewReservationsGridView.ReadOnly = false;
+                btnEdit.Text = "Save";
+                btnDelete.Enabled = true;
+            }
+            else
+            {
+                daReservationDetails.Update(dsTheGoldenSphinx.Tables["ReservationDetails"]);
+
+                dgvViewReservationsGridView.ReadOnly = true;
+                btnEdit.Text = "Edit";
+                btnDelete.Enabled = false;
+            }
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            dgvViewReservationsGridView.Rows.Remove(dgvViewReservationsGridView.SelectedRows[0]);
+            daReservationDetails.Update(dsTheGoldenSphinx.Tables["ReservationDetails"]);
         }
 
         public frmViewReservations()

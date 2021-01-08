@@ -16,7 +16,8 @@ namespace TheGoldenSphinx
         SqlDataAdapter daTable;
         DataSet dsTheGoldenSphinx = new DataSet();
         SqlCommandBuilder cmdBTable;
-        string connStr, sqlTable;
+        string connStr = Program.connStr;
+        string sqlTable;
 
         public frmTable()
         {
@@ -25,7 +26,7 @@ namespace TheGoldenSphinx
 
         private void frmTable_Load(object sender, EventArgs e)
         {
-            connStr = @"Data Source = .\SQLEXPRESS; Initial Catalog = TheGoldenSphinx; Integrated Security = true";
+            //connStr = @"Data Source = .\SQLEXPRESS; Initial Catalog = TheGoldenSphinx; Integrated Security = true";
             //connStr = @"Data Source = .; Initial Catalog = TheGoldenSphinx; Integrated Security = true";
 
             sqlTable = @"select * from Dinner";
@@ -43,6 +44,28 @@ namespace TheGoldenSphinx
             this.Close();
         }
 
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            if (btnEdit.Text == "Edit")
+            {
+                dgvViewTablesGridView.ReadOnly = false;
+                btnEdit.Text = "Save";
+                btnDelete.Enabled = true;
+            }
+            else
+            {
+                daTable.Update(dsTheGoldenSphinx.Tables["Dinner"]);
 
+                dgvViewTablesGridView.ReadOnly = true;
+                btnEdit.Text = "Edit";
+                btnDelete.Enabled = false;
+            }
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            dgvViewTablesGridView.Rows.Remove(dgvViewTablesGridView.SelectedRows[0]);
+            daTable.Update(dsTheGoldenSphinx.Tables["Dinner"]);
+        }
     }
 }
