@@ -153,9 +153,6 @@ namespace TheGoldenSphinx
         }
         private void frmNewReservation_Load(object sender, EventArgs e)
         {
-            //connStr = @"Data Source = .\SQLEXPRESS; Initial Catalog = TheGoldenSphinx; Integrated Security = true";
-            //connStr = @"Data Source = .; Initial Catalog = TheGoldenSphinx; Integrated Security = true";
-
             sqlReservation = @"select * from Reservation";
             daReservation = new SqlDataAdapter(sqlReservation, connStr);
             cmdBReservation = new SqlCommandBuilder(daReservation);

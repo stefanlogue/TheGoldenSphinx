@@ -60,9 +60,6 @@ namespace TheGoldenSphinx
 
         private void frmViewProducts_Load(object sender, EventArgs e)
         {
-            //connStr = @"Data Source = .\SQLEXPRESS; Initial Catalog = TheGoldenSphinx; Integrated Security = true";
-            //connStr = @"Data Source = .; Initial Catalog = TheGoldenSphinx; Integrated Security = true";
-
             sqlProduct = @"select * from Product";
             daProduct = new SqlDataAdapter(sqlProduct, connStr);
             cmdBProduct = new SqlCommandBuilder(daProduct);

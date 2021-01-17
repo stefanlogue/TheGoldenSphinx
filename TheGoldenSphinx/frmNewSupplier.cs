@@ -22,9 +22,6 @@ namespace TheGoldenSphinx
 
         private void frmNewSupplier_Load(object sender, EventArgs e)
         {
-            //connStr = @"Data Source = .\SQLEXPRESS; Initial Catalog = TheGoldenSphinx; Integrated Security = true";
-            //connStr = @"Data Source = .; Initial Catalog = TheGoldenSphinx; Integrated Security = true";
-
             sqlSupplier = @"select * from Supplier";
             daSupplier = new SqlDataAdapter(sqlSupplier, connStr);
             cmdBSupplier = new SqlCommandBuilder(daSupplier);

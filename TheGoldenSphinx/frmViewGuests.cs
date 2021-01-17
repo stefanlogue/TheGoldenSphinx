@@ -26,9 +26,6 @@ namespace TheGoldenSphinx
 
         private void frmViewGuests_Load(object sender, EventArgs e)
         {
-            //connStr = @"Data Source = .\SQLEXPRESS; Initial Catalog = TheGoldenSphinx; Integrated Security = true";
-            //connStr = @"Data Source = .; Initial Catalog = TheGoldenSphinx; Integrated Security = true";
-
             sqlGuest = @"select * from Customer";
             daGuest = new SqlDataAdapter(sqlGuest, connStr);
             cmdBGuest = new SqlCommandBuilder(daGuest);

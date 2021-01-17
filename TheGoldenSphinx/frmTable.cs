@@ -26,9 +26,6 @@ namespace TheGoldenSphinx
 
         private void frmTable_Load(object sender, EventArgs e)
         {
-            //connStr = @"Data Source = .\SQLEXPRESS; Initial Catalog = TheGoldenSphinx; Integrated Security = true";
-            //connStr = @"Data Source = .; Initial Catalog = TheGoldenSphinx; Integrated Security = true";
-
             sqlTable = @"select * from Dinner";
             daTable = new SqlDataAdapter(sqlTable, connStr);
             cmdBTable = new SqlCommandBuilder(daTable);
